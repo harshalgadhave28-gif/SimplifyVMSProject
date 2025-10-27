@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Master Suite" parallel="tests" thread-count="3">
+
+    <!-- Each suite will run on a different browser -->
+    <suite-files>
+        <suite-file path="./testngfiles/Login.xml" />       <!-- Chrome -->
+        <suite-file path="./testngfiles/Hierarchy.xml" />   <!-- Edge -->
+        <suite-file path="./testngfiles/Vendor.xml" />      <!-- Firefox -->
+    </suite-files>
+
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Main Test Suite" parallel="false">
+
+    <!-- Include all your individual XML files here -->
+    <suite-files>
+        <suite-file path="../simplifyvms/vendor.xml" />        
+        <!--suite-file path="../simplifyvms/HolidayCalender.xml" />
+        <suite-file path="../simplifyvms/MDT.xml" />
+        <suite-file path="../simplifyvms/Msp_creation.xml" />
+        <suite-file path="../simplifyvms/testng.xml" />
+        <suite-file path="../simplifyvms/workflow.xml" />
+        <suite-file path="../simplifyvms/worklocation.xml" /-->
+    </suite-files>
+
+</suite>
+

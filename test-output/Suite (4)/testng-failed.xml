@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite (4)]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExrendReportManager"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="chrometest(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.Workflow_Creation">
+        <methods>
+          <include name="workflows"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.Workflow_Creation -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
+</suite> <!-- Failed suite [Suite (4)] -->
