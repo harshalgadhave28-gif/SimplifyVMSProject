@@ -31,6 +31,12 @@ public class HolidayCalendes extends BasePage{
 	
 	By dropdownOptions= By.xpath("//div[@role='option']//span[@class='ng-option-label ng-star-inserted']");
 	
+	@FindBy(xpath = "//label[@for='toggleSwitch2']")
+	WebElement associatehire;
+	
+	@FindBy(xpath = "//label[@for='toggleSwitch3']")
+	WebElement associatework;
+	
 	public void holidayclick() {
 		holidaycaledersbtn.click();
 		holidaycreatebtn.click();
@@ -53,6 +59,8 @@ public class HolidayCalendes extends BasePage{
 	    options.get(randomIndex).click();
 	}
 	
-	
-	
+	public void associatedhirearchys() {
+		associatehire.click();
+		associatework.click();
+	}
 }
