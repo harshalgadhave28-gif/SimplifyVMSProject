@@ -52,6 +52,7 @@ public class RateType extends BasePage{
 	WebElement RTCSave;
 	
 	
+	
 //	 Method 
 	public void Rates(){   // use Explicit wait due to staleelement reference exception
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
