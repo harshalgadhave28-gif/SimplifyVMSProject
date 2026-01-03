@@ -8,12 +8,12 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.Vendors_Creation">
+      <class name="testCases.RateType_Cration">
         <methods>
-          <include name="vendorcre"/>
+          <include name="Rtcreation"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.Vendors_Creation -->
+      </class> <!-- testCases.RateType_Cration -->
     </classes>
   </test> <!-- chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

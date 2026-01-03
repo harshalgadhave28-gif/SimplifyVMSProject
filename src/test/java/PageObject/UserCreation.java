@@ -66,7 +66,6 @@ public class UserCreation extends BasePage{
         }
     }
 	
-	
 	public String generateUniqueEmail() {
         // Example output: harshaltest+1730371285001@gmail.com
         int id = counter.getAndIncrement();

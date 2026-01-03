@@ -158,6 +158,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import TestBase.BaseClass;
 import TestBase.BaseClass2;
+import TestBase.BaseClass3;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -227,7 +228,7 @@ public class ExrendReportManager implements ITestListener {
 
         // ✅ Capture and attach screenshot
         try {
-            BaseClass2 base = (BaseClass2) result.getInstance();
+            BaseClass3 base = (BaseClass3) result.getInstance();
             WebDriver driver = base.getDriver(); // make sure BaseClass has getDriver() method
             String screenshotPath = captureScreenshot(driver, result.getName());
             test.addScreenCaptureFromPath(screenshotPath, "Failed Test Screenshot");

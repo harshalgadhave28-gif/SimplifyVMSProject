@@ -59,6 +59,7 @@ public class HolidayCalendes extends BasePage{
 	    options.get(randomIndex).click();
 	}
 	
+	
 	public void associatedhirearchys() {
 		associatehire.click();
 		associatework.click();
