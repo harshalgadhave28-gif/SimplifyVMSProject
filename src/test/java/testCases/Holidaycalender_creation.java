@@ -12,6 +12,7 @@ public class Holidaycalender_creation extends BaseClass2{
 		hc.holidayclick();
 		hc.calendarname();
 		hc.year();
+		hc.associatedhirearchys();
 	}
 	
 	

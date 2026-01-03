@@ -7,8 +7,27 @@
 </listeners>
 
   <test name="chrometest">
-    <parameter name="os" value="Windows"></parameter>
+    <parameter name="os" value="Linux"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="execution_env" value="remote"/>
+    <classes>
+      <class name="testCases.Holidaycalender_creation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="WINtest">
+    <parameter name="os" value="WIN11"></parameter>
         <parameter name="browser" value="chrome"></parameter>
+        <parameter name="execution_env" value="remote"/>
+    <classes>
+      <class name="testCases.Holidaycalender_creation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="MACtest">
+    <parameter name="os" value="MAC"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="execution_env" value="remote"/>
     <classes>
       <class name="testCases.Holidaycalender_creation"/>
     </classes>

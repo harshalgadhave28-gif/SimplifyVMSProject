@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -39,9 +41,20 @@ public class BaseClass3 {
 	lp.setPassword("Admin@Simplify");
 	lp.clicklogin();
 	
-	driver.findElement(By.xpath("//input[@placeholder='Search..']")).sendKeys("Stonebridge National Distribution");
-	driver.findElement(By.xpath("//p[@class='truncate-text blue-text cursor-pointer d-inline-block text-nowrap ng-star-inserted']")).click();
-	driver.findElement(By.xpath("//body//app-root//button[2]")).click();
-	}
+	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+      driver.findElement(By.xpath("//input[@placeholder='Search..']")).sendKeys("My Own Program-Sheetal");
+      By orgResult = By.xpath("//p[contains(normalize-space(), 'My Own Program-Sheetal')]");
+      wait.until(ExpectedConditions.elementToBeClickable(orgResult));
+      driver.findElement(orgResult).click();
+      driver.findElement(By.xpath("//body//app-root//button[2]")).click();
+//      driver.findElement(By.xpath("//span[normalize-space()='Navigate to Dashboard']")).click();
+
+  }
+
+  public WebDriver getDriver() {
+      return driver;
+      
+      
+  }
 
 }

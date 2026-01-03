@@ -15,11 +15,6 @@
   </test> <!-- Test -->
   
   
-    <test  name="edgetest">	
-    <parameter name="os" value="Windows"></parameter>
-        <parameter name="browser" value="edge"></parameter>
-    <classes>
-      <class name="testCases.Client_Creationtest"/>
-    </classes>
-  </test> <!-- Test -->
+  
+
 </suite> <!-- Suite -->
