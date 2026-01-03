@@ -98,8 +98,6 @@ public class RateType extends BasePage{
 	    optioins.get(randomIndex).click();
 	    RTCSave.click();
 	}
-	  
-	 
 	public void Ratetypefilternames() {
 		String Spelling[]= {"rthnbgfv","rtgbdvfd","srnbrsfd","tryhtgsf"};
 		int randomindex= new Random().nextInt(Spelling.length);
@@ -107,6 +105,7 @@ public class RateType extends BasePage{
 		String generateratetye= Spelling[randomindex]+randomnumber;
 		RateTypeFilterName.sendKeys(generateratetye);
 	}
+	
 	
 	
 }
